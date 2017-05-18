@@ -1,0 +1,1 @@
+-MSDeployPath "C:\Program Files (x86)\IIS\Microsoft Web Deploy V3" -package "$(System.DefaultWorkingDirectory)/Core.Rel/drop/$(Build.BuildNumber).zip" -websiteName "Core1Demo" -computerName "https://CC-WIN2012.domainx.local:8172/msdeploy.axd?site=Core1Demo" -deployUser "domain\username" -deployUserPwd "pwd"

@@ -1,0 +1,57 @@
+﻿{
+  "id": "0e8e79db-252f-40d0-9cfa-a539cf9e576e",
+  "name": "DemoTask",
+  "friendlyName": "Demo Task",
+  "description": "VSTS/TFS Demo Build Release Task",
+  "helpMarkDown": "[More Information](https://url.to/yourmarkdown)",
+  "category": "Utility",
+  "visibility": [
+    "Build", 
+    "Release"
+  ],
+  "author": "",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 12
+  },
+  "demands": [
+  ],
+  "minimumAgentVersion": "1.83.0",
+  "groups": [
+
+  ],
+  "inputs": [
+    {
+      "name": "YourName",
+      "type": "string",
+      "label": "Your Name",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "ShowWarningMsg",
+      "type": "boolean",
+      "label": "Show Warning Message",
+      "defaultValue": "false",
+      "required": true,
+      "helpMarkDown": "Shows a warning message if this is checked."
+    },
+    {
+      "name": "ShowErrorMsgandFail",
+      "type": "boolean",
+      "label": "Show Error Message",
+      "defaultValue": "false",
+      "required": true,
+      "helpMarkDown": "Shows an error message and fail the task and build if this is checked."
+    }
+  ],
+  "instanceNameFormat": "DemoTask",
+  "execution": {
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\task.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

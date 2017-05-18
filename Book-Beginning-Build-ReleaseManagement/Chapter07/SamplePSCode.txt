@@ -1,0 +1,9 @@
+param(
+$CommonParam,
+$TaskParam1,
+$TaskParam2
+)
+
+write-host "Task 1 CommonParam Value:" $CommonParam
+write-host "Task 1 TaskParam1 Value:" $TaskParam1
+write-host "Task 1 TaskParam2 Value:" $TaskParam2

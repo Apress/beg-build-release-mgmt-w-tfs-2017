@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginDemo", "PluginDemo\PluginDemo.csproj", "{56ACE05E-3756-4B7D-9B6F-672BB2FFC19B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevScripts", "DevScripts", "{E3B6E93B-80E4-4224-8B2E-D69A9CF7917C}"
+	ProjectSection(SolutionItems) = preProject
+		DevScripts\DownloadCRMSolutions.ps1 = DevScripts\DownloadCRMSolutions.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PSModules", "PSModules", "{30AD686D-6021-4EF6-AD23-9CD88EC79967}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microsoft.Xrm.Data.PowerShell", "Microsoft.Xrm.Data.PowerShell", "{87C465DE-F9F1-4D89-BC83-AC09A69105A3}"
+	ProjectSection(SolutionItems) = preProject
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Crm.Sdk.Proxy.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Crm.Sdk.Proxy.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.IdentityModel.Clients.ActiveDirectory.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Data.PowerShell.Help.xml = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Data.PowerShell.Help.xml
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Data.PowerShell.psd1 = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Data.PowerShell.psd1
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Data.PowerShell.psm1 = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Data.PowerShell.psm1
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Sdk.Deployment.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Sdk.Deployment.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Sdk.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Sdk.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.Connector.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.Connector.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.CrmConnectControl.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.CrmConnectControl.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.CrmConnector.Powershell.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.CrmConnector.Powershell.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.Ui.Styles.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.Ui.Styles.dll
+		PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.WebResourceUtility.dll = PSModules\Microsoft.Xrm.Data.PowerShell\Microsoft.Xrm.Tooling.WebResourceUtility.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{86FB10FC-DD99-4DBD-8CDA-CB50089D6056}"
+	ProjectSection(SolutionItems) = preProject
+		Utils\CommonFunctions.ps1 = Utils\CommonFunctions.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56ACE05E-3756-4B7D-9B6F-672BB2FFC19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56ACE05E-3756-4B7D-9B6F-672BB2FFC19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56ACE05E-3756-4B7D-9B6F-672BB2FFC19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56ACE05E-3756-4B7D-9B6F-672BB2FFC19B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87C465DE-F9F1-4D89-BC83-AC09A69105A3} = {30AD686D-6021-4EF6-AD23-9CD88EC79967}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://chamindac.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PluginDemo\\PluginDemo.csproj
+		SccProjectName1 = PluginDemo
+		SccLocalPath1 = PluginDemo
+	EndGlobalSection
+EndGlobal

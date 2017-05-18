@@ -1,0 +1,72 @@
+{
+  "manifestVersion": 1,
+  "id": "demo-extension",
+  "version": "1.0.12",
+  "name": "Demo Extension",
+  "scopes": [ "vso.work", "vso.work_write" ],
+  "description": "This is Demo extension for VSTS/TFS build and release.",
+  "baseUri": "https://localhost",
+  "publisher": "chamindaLC",
+  "public": false,
+  "icons": {
+    "default": "img/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": [
+    "Sample"
+  ],
+  "links": {
+    "home": {
+      "uri": "https://bit.ly"
+    },
+    "getstarted": {
+      "uri": "https://bit.ly"
+    },
+    "learn": {
+      "uri": "https://bit.ly"
+    },
+    "support": {
+      "uri": "https://bit.ly"
+    },
+    "repository": {
+      "uri": "https://bit.ly"
+    },
+    "issues": {
+      "uri": "https://bit.ly"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "DemoTask"
+    },
+    {
+        "path": "node_modules/vss-web-extension-sdk/lib",
+        "addressable": true,
+        "packagePath": "lib"
+      }
+    
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "contributions": [
+    {
+      "id": "demo-task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "DemoTask"
+      }
+    }
+  ]
+}
